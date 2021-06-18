@@ -476,10 +476,6 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-
-  .search__input {
-    max-width: 340px;
-  }
 }
 @media (max-width: 768px) {
   .container {
