@@ -1,23 +1,23 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-@media (max-width: 992px)
-  .container
-    max-width: 700px
-  .logo
-    width: 132px
-  .navbar
-    &-top
-      padding-top: 30px
-      padding-bottom: 30px
-    &__search
-      margin-left: auto
-    &-menu
-      padding-top: 18px
-      padding-bottom: 18px
-      &__link
-        font-size: 12px
-        line-height: 15px
+// @media (max-width: 992px)
+//   .container
+//     max-width: 700px
+//   .logo
+//     width: 132px
+//   .navbar
+//     &-top
+//       padding-top: 30px
+//       padding-bottom: 30px
+//     &__search
+//       margin-left: auto
+//     &-menu
+//       padding-top: 18px
+//       padding-bottom: 18px
+//       &__link
+//         font-size: 12px
+//         line-height: 15px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -25,6 +25,8 @@
   .navbar
     &__search, &-menu, &__user
       display: none
+    &-top
+      padding-bottom: 30px
   .menu
     &-button
       width: 16px
@@ -42,7 +44,7 @@
         height: 1px
         background-color: $text-color
   .stars
-    flex-basis: content
+    flex-basis: auto
   .hotel
     &-name
       flex-basis: 100%
@@ -54,8 +56,19 @@
       &__rating
         display: none
       &__offer
+        margin-left: 1px
         order: -1
-        margin: 0
+      &__hotel-name
+        margin-top: 10px
 @media (max-width: 576px)
   .logo
     width: 99px
+  .navbar
+    &-top
+      padding-bottom: 28px
+      padding-top: 28px
+  .breadcrumb
+    &-list
+      padding: 17px 0
+  .hotel
+    padding-top: 0
