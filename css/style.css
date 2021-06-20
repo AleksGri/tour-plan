@@ -476,6 +476,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 20px;
 }
 .hotel-info__offer {
   margin-left: 14px;
@@ -498,6 +499,31 @@ template {
   margin: 0;
   font-size: 12px;
   line-height: 15px;
+}
+.hotel-grid {
+  display: flex;
+  justify-content: space-between;
+}
+.hotel-grid__slider {
+  background-color: #009;
+  width: 728px;
+  height: 450px;
+}
+.hotel-grid__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.hotel-grid__booking {
+  background-color: #900;
+  width: 350px;
+  height: 210px;
+}
+.hotel-grid__map {
+  background-color: #090;
+  width: 347px;
+  height: 213px;
 }
 
 .stars {
