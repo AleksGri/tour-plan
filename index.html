@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css " />
   </head>
   <body>
@@ -129,12 +130,44 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="hotel-grid__slider"></div>
+          <div class="hotel-grid__slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    src="img/slider-example-1.jpeg"
+                    alt="Picture: Main Hotel Picture"
+                    class="swiper-slide__item"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slider-example-2.jpeg"
+                    alt="Picture: Room Hotel Picture"
+                    class="swiper-slide__item"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slider-example-3.jpeg"
+                    alt="Picture: Bathroom Hotel Picture"
+                    class="swiper-slide__item"
+                  />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+          </div>
           <!-- /.hotel-grid__slider -->
           <div class="hotel-grid__wrapper">
-            <div class="hotel-grid__booking"></div>
+            <div class="hotel-grid__booking">Booking</div>
             <!-- /.hotel-grid__booking -->
-            <div class="hotel-grid__map"></div>
+            <div class="hotel-grid__map">Map</div>
             <!-- /.hotel-grid__map -->
           </div>
           <!-- /.hotel-grid__wrapper -->
@@ -144,5 +177,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
